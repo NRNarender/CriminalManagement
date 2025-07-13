@@ -27,6 +27,9 @@ A Criminal Record Management System with MySQL database and GUI built using Tkin
 2. MySQL Server:
    -Download from: https://dev.mysql.com/downloads/installer/
 
+3. Python:
+   -Download from: https://www.python.org/downloads/
+
 3. Install Dependencies:
    ```bash
    pip install -r requirements.txt
