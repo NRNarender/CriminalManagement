@@ -34,7 +34,7 @@ class Criminal:
         lbl_title = Label(self.root, text='CRIMINAL MANAGEMENT SYSTEM', font=('times new roman', 35, 'bold'), bg='black', fg='gold')
         lbl_title.place(x=0, y=0, width=1530, height=70)
 
-        # piet_logo
+        # logo
         img_logo = Image.open('logo.png')
         img_logo = img_logo.resize((60, 60))
         self.photo_logo = ImageTk.PhotoImage(img_logo)
