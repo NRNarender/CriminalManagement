@@ -13,7 +13,7 @@ class Criminal:
     def __init__(self, root):
         self.root = root
         self.root.geometry('1530x790+0+0')
-        self.root.title('28822651 Project')
+        self.root.title('Narender Project')
         
         # Variables
         self.var_case_id = StringVar()
