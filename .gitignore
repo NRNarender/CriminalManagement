@@ -1,0 +1,14 @@
+Environment files
+.env
+
+Python cache files
+pycache/ *.pyc
+
+OS generated files
+.DS_Store *.log
+
+Virtual environment
+venv/ env/
+
+IDE specific files
+*.idea/ *.vscode/
