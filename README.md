@@ -1,6 +1,6 @@
 # Criminal Management System
 
-A desktop-based Criminal Record Management System with MySQL database and GUI built using Tkinter.
+A Criminal Record Management System with MySQL database and GUI built using Tkinter.
 
 ## Features
 
@@ -23,19 +23,47 @@ A desktop-based Criminal Record Management System with MySQL database and GUI bu
    ```bash
    git clone https://github.com/your-username/CriminalManagementSystem.git
    cd CriminalManagementSystem
-2. Install Dependencies:
+
+2. MySQL Server:
+   -Download from: https://dev.mysql.com/downloads/installer/
+
+3. Install Dependencies:
    ```bash
    pip install -r requirements.txt
-3. Configure the database:
+
+4. Configure the database:
    - Create a MySQL database named management.
-   - Create required tables (login, criminal).
+   - Create required tables (login, criminal):
+
+       CREATE TABLE criminal (
+            Case_id VARCHAR(20) PRIMARY KEY,
+            Criminal_id VARCHAR(20),
+            Criminal_name VARCHAR(50),
+            Nick_name VARCHAR(50),
+            arrest_date DATE,
+            dateOfcrime DATE,
+            address VARCHAR(100),
+            age INT,
+            occupation VARCHAR(50),
+            BirthMark VARCHAR(50),
+            crimeType VARCHAR(50),
+            fatherName VARCHAR(50),
+            gender VARCHAR(10),
+            wanted VARCHAR(10)
+       );
+
+       CREATE TABLE login (
+            userid VARCHAR(50),
+            password VARCHAR(50)
+       );
+
    - Set your credentials in .env file:
        DB_HOST=localhost
        DB_USER=root
        DB_PASSWORD=yourpassword
        DB_NAME=management
      
-4. Run the project:
+5. Run the project:
    ```bash
    python login.py
 
