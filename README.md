@@ -22,7 +22,7 @@ A Criminal Record Management System with MySQL database and GUI built using Tkin
 1. Clone the repository:
    ```bash
    git clone https://github.com/NRNarender/CriminalManagement.git
-   cd CriminalManagementSystem
+   cd CriminalManagement
 
 2. MySQL Server:
    -Download from: https://dev.mysql.com/downloads/installer/
